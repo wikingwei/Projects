@@ -1,2 +1,14 @@
 use git status to check..
 I need more practice to learn it.
+
+Demo:
+
+$ cd ~/Projects/Diary 
+$ git init 
+$ git add * 
+$ git commit -m "The first commit of Project: Diary"
+
+
+$ cd ~/Projects/Diary 
+$ git commit -m "Last commit and then push" 
+$ git push
