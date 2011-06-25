@@ -15,7 +15,7 @@ $ cp ~/Projects/Repo.git E:/git/  (hub shared repo)
 
 $ cd ~/Projects 
 $ rm -f -r Repo
-$ git clone E:/git/Repo.git
+$ git clone E:/git/Repo.git (可以在任何目录下用此命令从原始库checkout!)
 
 大功告成，目前的项目状态就是：
  　　当前工作副本是 ~/Projects/Repo，原始仓库是 E:/git/，当你愉快的工作了一个星期，进行了若干次 commit 提交操作，到了周末需要备份项目的时候（虽然一个星期备份一次是很不好的习惯，最好一天一次），只需要:
