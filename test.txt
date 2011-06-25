@@ -31,3 +31,5 @@ $ git commit -m "Last commit and then push"
 $ git push origin master 
 Лђеп 
 $ git push
+
+-- The END --
