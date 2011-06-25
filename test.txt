@@ -3,12 +3,31 @@ I need more practice to learn it.
 
 Demo:
 
-$ cd ~/Projects/Diary 
+$ cd ~/Projects/Repo  (empty)
 $ git init 
 $ git add * 
-$ git commit -m "The first commit of Project: Diary"
+$ git commit -m "The first commit of Project: Repo"
 
+$ cd ~/Projects
+$ git clone --bare Repo Repo.git
 
-$ cd ~/Projects/Diary 
+$ cp ~/Projects/Repo.git E:/git/  (hub shared repo)
+
+$ cd ~/Projects 
+$ rm -f -r Repo
+$ git clone E:/git/Repo.git
+
+大功告成，目前的项目状态就是：
+ 　　当前工作副本是 ~/Projects/Repo，原始仓库是 E:/git/，当你愉快的工作了一个星期，进行了若干次 commit 提交操作，到了周末需要备份项目的时候（虽然一个星期备份一次是很不好的习惯，最好一天一次），只需要:
+$ cd ~/Projects/
 $ git commit -m "Last commit and then push" 
+$ git push
+ 
+
+另外一个可能会因为 Diary 中文件被更改而被 Git 拒绝推送的操作是：1
+$ cd ~/Projects/
+$ git remote add origin E:/git/Repo.git 
+$ git commit -m "Last commit and then push" 
+$ git push origin master 
+或者 
 $ git push
