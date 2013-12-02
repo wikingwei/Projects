@@ -13,7 +13,7 @@
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
-{
+{  aaaa
 	vector<int> v;
 	for (int i = 0; i < 101; ++i)
 	{
@@ -25,9 +25,10 @@ int _tmain(int argc, _TCHAR* argv[])
 			if (n % 2 == 0)
 			{cout << " even\n"; }
 			else
-			{cout << " odd\n";}
+			{cout << " odd\n"; }
 	});
 
 	cout << endl;
-	return 0; 
+	return 0; 
+ 
 }
