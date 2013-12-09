@@ -33,3 +33,28 @@ $ git push origin master
 $ git push
 
 -- The END --
+
+GIT merge tool
+
+Configuration
+meld is a useful three-way-compare merge tool. you can use it in Git. 
+ sudo apt-get install meld;            (install meld)
+ git config --global merge.tool meld;  (set Git merge tool default as meld)
+Usage
+When you merge a branch in Git, it may get into conflict state, if you need to go on, you need fix these conflict, but if you need to go back to the state before merge, you can you use 
+ git reset --hard; (get me back)
+If you want to fix the conflicts, use 
+ git mergetool;   
+ 
+ 
+ http://www.cnblogs.com/sinojelly/archive/2011/08/07/2130172.html
+ Git下的冲突解决
+ 
+ 
+ 
+ What's a good (free) visual merge tool for Git? (on windows)
+http://stackoverflow.com/questions/7227826/whats-a-good-free-visual-merge-tool-for-git-on-windows
+
+推荐:
+WinMerge  http://winmerge.org/
+WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.
